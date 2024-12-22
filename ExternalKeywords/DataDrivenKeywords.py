@@ -19,15 +19,13 @@ def read_locator_from_json(locatorname):
     # When we read data using jsonpath it returns a list of one item ot more than that. Will return value at index 0
     return value[0]
 
+valKEY = read_locator_from_json("Inbox.writemail_xpath");
+print(valKEY)
 
-
-
-
-
-
+print("***************************************************")
 
 # print(str(val)+'\\TestCases\\DataDriven\\TestDataDriven.xlsx')
-workBookPath = str(val)+'\\TestCases\\DataDriven\\TestDataDriven.xlsx'
+workBookPath = str(val)+'\\ExcelFile\\TestDataDriven.xlsx'
 wb = openpyxl.load_workbook(workBookPath)
 
 

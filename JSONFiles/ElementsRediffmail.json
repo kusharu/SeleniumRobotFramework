@@ -7,11 +7,12 @@
         },
   "Inbox":
         {
-          "writemail_xpath": "//*[@id='boxscroll']/li[1]/a/b",
-          "to_id": "TO_IDcmp2",
-          "subject_xpath": "//*[@id='rd_compose_cmp2']/ul/li[4]/input",
-          "frame_xpath" : "//*[@id='cke_1_contents']/iframe",
+          "writemail_xpath": "//*[text()='Write mail']",
+          "to_xpath": "//html/body/div[4]/div[2]/div[2]/div[2]/div[2]/ul[2]/li[3]/div/div/ul/li[1]/ul/li/input[1]",
+          "subject_xpath": "//html/body/div[4]/div[2]/div[2]/div[2]/div[2]/ul[2]/li[3]/div/div/ul/li[4]/input",
+          "frame_xpath" : "//*[@id='cke_2_contents']/iframe",
           "compose_area_xpath": "/html/body",
-          "logout_xpath" : "/html/body/div[4]/div[1]/div/div[2]/a[2]"
+          "send_button_xpath": "//*[@id='rd_compose_cmp3']/div[1]/a[1]",
+          "logout_xpath" : "//html/body/div[4]/div[1]/div/div[2]/a[2]"
         }
 }

@@ -1,12 +1,17 @@
 *** Settings ***
-Suite Setup    Before Suite Run
-Suite Teardown    After Suite Run
+
+Library    SeleniumLibrary
+Library    Collections
+Suite Setup    Before Suite
+Suite Teardown    After Suite
+
 
 
 
 *** Keywords ***
-Before Suite Run
-    log to console    Before Suite Runs
+Before Suite
+    log to console    Before Suite runs
 
-After Suite Run
-    log to console    After Suite Runs
+After Suite
+    log to console    After Suite runs
+
